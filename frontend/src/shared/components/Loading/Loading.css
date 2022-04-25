@@ -1,0 +1,30 @@
+.loading {
+  height: calc(100vh - 5.8em);
+  flex: 10.8 1 0;
+}
+
+.loader {
+  border: 12px solid transparent; /* Light grey */
+  border-top: 12px solid #c000d4; /* Blue */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 0.8s linear infinite;
+  position: relative;
+  top: 35%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .loader {
+    left: 35%;
+  }
+}

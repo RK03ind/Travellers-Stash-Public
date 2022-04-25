@@ -1,0 +1,52 @@
+.toast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  width: auto;
+  max-width: 95vw;
+  border-radius: 4px;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 1.05rem;
+  font-weight: 400;
+  background: white;
+  bottom: 80px;
+  animation: testSlide 0.48s forwards;
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 2px 15px 0 rgb(0 0 0 / 5%);
+}
+
+.toast svg {
+  height: 1.46em;
+  width: 1.46em;
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 0.74rem;
+  padding: 1em 0.9em;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.3em;
+  transition: width 0.15s;
+  /* background-color: #6bbe66; */
+  align-self: flex-start;
+}
+
+@keyframes testSlide {
+  from {
+    right: -12000px;
+  }
+  to {
+    right: 40px;
+    margin-left: 1em;
+  }
+}
+
+/* if dark mode set to --sidebar-highlight-color
+    else set to default sidebar hightlight color 
+    also remember to set darkmode to false in local storage while logging out
+*/

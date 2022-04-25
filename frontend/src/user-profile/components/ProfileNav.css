@@ -1,0 +1,55 @@
+.profile-nav {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  gap: 2.25em;
+}
+
+.profile-nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0 0.08em;
+}
+
+.profile-nav-item .count {
+  font-weight: 600;
+  font-size: 1.06em;
+  font-family: inherit;
+  color: var(--primary-text-color);
+}
+
+.profile-nav-item .title {
+  font-size: 1em;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 480px) {
+  .profile-nav-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.25em;
+  }
+  .profile-nav {
+    gap: 3em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .profile-nav {
+    gap: 6em;
+  }
+  .profile-nav-item {
+    gap: 0.6em;
+    padding: 0 0.15em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .profile-nav {
+    margin-left: 16rem;
+  }
+}

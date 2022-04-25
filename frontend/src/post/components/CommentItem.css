@@ -1,0 +1,41 @@
+.comment-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1.5em;
+}
+
+.comment-user-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  gap: 0.4em;
+  color: var(--comment-uid-color);
+}
+
+.comment-user-details img {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+}
+
+.comment {
+  font-family: inherit;
+  color: var(--primary-text-color);
+  transition: color 0.5s;
+  margin-top: 0.65em;
+  font-size: 1.02em;
+  word-break: break-word;
+}
+
+.comment-item span:nth-child(3) {
+  cursor: pointer;
+  margin-top: 0.45em;
+  color: #9197a3;
+  font-size: 0.92em;
+  font-weight: 100;
+}

@@ -1,0 +1,54 @@
+.user-item {
+  display: flex;
+  width: auto;
+  width: 90%;
+  gap: 1.5rem;
+  padding: 2.28% 4.8%;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+  transition: background 0.5s, transform 0.4s;
+  background-color: var(--white);
+}
+
+.user-item:hover {
+  transform: scale(1.05);
+}
+
+.user-image img {
+  width: 112px;
+  height: 112px;
+  border-radius: 55px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.user-name {
+  font-size: larger;
+  font-weight: 600;
+  transition: color 0.5s;
+  color: var(--primary-text-color);
+}
+.user-places {
+  transition: color 0.5s;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 769px) {
+  .user-item {
+    padding: 1.5% 2.2%;
+    width: 36em;
+    max-width: 64vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .user-item {
+    margin-left: 16rem;
+  }
+}

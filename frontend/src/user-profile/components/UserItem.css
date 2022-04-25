@@ -1,0 +1,33 @@
+.user-item-profile {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2em;
+  width: 36em;
+  max-width: 90vw;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.user-item-profile:hover {
+  transform: scale(1.05);
+}
+
+.user-item-profile img {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+}
+
+.user-item-profile span {
+  font-size: 1.3em;
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .user-item-profile {
+    margin-left: 16rem;
+  }
+}

@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: background 0.5s, border 0.5s;
+  background: var(--background);
+  border-top: 2px solid var(--border-color);
+  padding: 1.75% 0;
+  flex: 0 1 0%;
+}
+nav img {
+  height: 1.9rem;
+  width: 1.9rem;
+}
+
+nav img:hover {
+  transform: scale(1.38) !important;
+}
+
+/* nav img[dark*="true"] {
+  filter: invert(81%) sepia(3%) saturate(8%) hue-rotate(315deg) brightness(86%)
+    contrast(80%);
+} */

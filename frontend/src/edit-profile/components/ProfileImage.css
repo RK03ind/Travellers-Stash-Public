@@ -1,0 +1,81 @@
+.profile-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2.8em;
+  gap: 2.4em;
+}
+
+.profile-image {
+  height: 8.4em;
+  width: 8.4em;
+  border-radius: 50%;
+}
+
+.user-action-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+}
+
+.upload {
+  cursor: pointer;
+  background-color: var(--primary-button);
+  color: black;
+  padding: 0.55em;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.upload input {
+  display: none;
+}
+
+.upload img {
+  height: 1.1em;
+}
+.upload label {
+  cursor: pointer;
+}
+
+.confirm {
+  cursor: pointer;
+  background-color: #6bbe66;
+  color: black;
+  padding: 0.55em;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.confirm img {
+  height: 1.1em;
+}
+
+@media screen and (min-width: 769px) {
+  .profile-image-container {
+    gap: 3.6em;
+  }
+
+  .profile-image {
+    height: 10.2em;
+    width: 10.2em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .profile-image-container {
+    margin-left: 20rem;
+  }
+}

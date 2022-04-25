@@ -1,0 +1,47 @@
+.comment-container label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  color: var(--primary-text-color);
+  margin-bottom: 0.5em;
+  transition: color 0.5s;
+}
+
+.comment-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.comment-input-container input {
+  width: 72%;
+  padding: 0.75em;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  background-color: var(--white);
+  color: var(--primary-text-color);
+  border: 0;
+  transition: background-color 0.5s;
+}
+
+.comment-input-container input:focus {
+  outline: 0;
+}
+
+.comment-input-container button {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 1em 1.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  outline: 0;
+  border: 0;
+  background: var(--primary-button);
+}
+
+@media screen and (min-width: 769px) {
+  .comment-input-container input {
+    width: 82%;
+  }
+}

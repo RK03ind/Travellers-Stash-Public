@@ -1,0 +1,19 @@
+.not-found {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: calc(100vh - 85vh);
+}
+
+.not-found span:nth-child(1) {
+  display: block;
+  font-weight: bolder;
+  font-size: 2.8em;
+  color: var(--primary-text-color);
+}
+
+.not-found span:nth-child(2) {
+  display: block;
+  font-size: 1.8em;
+  margin-top: 0.5em;
+  color: var(--secondary-text-color);
+}

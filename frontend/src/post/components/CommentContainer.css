@@ -1,0 +1,17 @@
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+  max-width: 91vw;
+  margin-top: 0.2em;
+}
+
+.comment-container .scroll-ref {
+  margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 1440px) {
+  .comment-container {
+    margin-left: 13rem;
+  }
+}
